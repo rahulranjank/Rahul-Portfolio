@@ -57,7 +57,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Munger</h1>
+          <h1 className="footer__col1__title">Rahul Ranjan</h1>
           <PText>
             {`I am working as a web developer for last 4 years.I have abundant experience in Incident Management and Rigor in Operation 
            process.Effective multi-tasker with outstanding organizational and customer service skills.`}
