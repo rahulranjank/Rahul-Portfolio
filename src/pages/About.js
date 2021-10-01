@@ -74,7 +74,7 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
-  const cvLink = `https://drive.google.com/file/d/1PXv2HBPk7E4ZAu4KMVQjCrQgTpPoLqNW/view?usp=sharing`;
+  const cvLink = `https://drive.google.com/file/d/1almTthJfnec9i5zG4rlyH7pEJCzTj3BB/view?usp=sharing`;
   return (
     <>
       <AboutPageStyles>
