@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import HeroImg from '../assets/images/hero.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -39,7 +39,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -3rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -164,9 +164,7 @@ export default function HeroSection() {
               {`I am working as a web developer for last 4
               years. I love to design and make new web experiences for the
               people.Designed impressive UI apps for various applications user interface.
-              I have abundant experience in Incident Management and Rigor
-              in Operation process.Effective multi-tasker with outstanding organizational
-              and customer service skills.`}
+              `}
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
