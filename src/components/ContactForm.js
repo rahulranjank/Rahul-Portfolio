@@ -53,7 +53,6 @@ export default function ContactForm() {
       e.target,
       'user_5pRGmhtdZXNQqZibpn1mW'
     );
-    console.log(name, message, email);
   };
   return (
     <>
