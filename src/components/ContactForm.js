@@ -59,7 +59,7 @@ export default function ContactForm() {
         'user_5pRGmhtdZXNQqZibpn1mW'
       );
       toast.success(
-        `Message sent successfully.Rahul will acknowledge your message soon.`
+        `Message sent successfully.Rahul will acknowledge your message soon.Please refresh the page if you want to rend the message`
       );
       setDisabled1(true);
       setName('');
