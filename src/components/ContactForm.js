@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import emailJs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -40,19 +42,30 @@ const FormStyle = styled.form`
   }
 `;
 
+toast.configure();
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [disabled1, setDisabled1] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailJs.sendForm(
-      'service_m7wd6k1',
-      'template_pq6jx59',
-      e.target,
-      'user_5pRGmhtdZXNQqZibpn1mW'
-    );
+    if (name && email && message) {
+      emailJs.sendForm(
+        'service_m7wd6k1',
+        'template_pq6jx59',
+        e.target,
+        'user_5pRGmhtdZXNQqZibpn1mW'
+      );
+      toast.success(
+        `Message sent successfully.Rahul will acknowledge your message soon.`
+      );
+      setDisabled1(true);
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
   return (
     <>
@@ -66,6 +79,7 @@ export default function ContactForm() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              isRequired
             />
           </label>
         </div>
@@ -78,6 +92,7 @@ export default function ContactForm() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              isRequired
             />
           </label>
         </div>
@@ -90,10 +105,13 @@ export default function ContactForm() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              isRequired
             />
           </label>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" disabled={disabled1}>
+          Send
+        </button>
       </FormStyle>
     </>
   );
