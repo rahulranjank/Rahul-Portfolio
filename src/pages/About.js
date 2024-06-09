@@ -131,11 +131,21 @@ export default function About() {
 
               <AboutInfoItem
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Thunk']}
+                items={[
+                  'HTML',
+                  'CSS',
+                  'JavaScript',
+                  'React',
+                  'Redux',
+                  'Thunk',
+                  'React Query',
+                  'Redux Tool Kit',
+                  'TypeScript',
+                ]}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Basics Node', 'Basic Express']}
+                items={['Node', 'Basic Express']}
               />
             </div>
             <div className="about__info__item">
@@ -143,11 +153,15 @@ export default function About() {
 
               <AboutInfoItem
                 title="2017 - 2019"
-                items={['UI developer at THD']}
+                items={['System Engineer The Home Depot']}
               />
               <AboutInfoItem
-                title="2019-presnt"
-                items={['Front end developer at NielsenIq']}
+                title="2019-2022"
+                items={['Front end developer at American Express']}
+              />
+              <AboutInfoItem
+                title="2022-present"
+                items={['Front end developer at Danske bank']}
               />
             </div>
           </div>
