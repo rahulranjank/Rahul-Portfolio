@@ -4,6 +4,7 @@ import ExpenseTracker from '../images/Expense_Tracker.png';
 import weatherPic from '../images/Weather_App.png';
 import drumKit from '../images/Drum_Kit.png';
 import cockTails from '../images/Cocktails.png';
+import creditCard from '../images/credit_card.png';
 
 const projects = [
   {
@@ -40,6 +41,13 @@ const projects = [
     desc: `An application to see list of cocktails in a store.We have used useContext API for it.There is also search functionality to get any particular items.We can search according to any type of drink also .`,
     img: cockTails,
     link: 'https://cocktail-db-rahul.netlify.app/',
+  },
+  {
+    id: uuidv4(),
+    name: 'List of Credit Cards',
+    desc: `An application to see list of credit cards.We can add credit card and edit delete the credit card details using this site.We can also view the details of credit card in clicking the relevent button.`,
+    img: creditCard,
+    link: 'https://credit-card-list.netlify.app/',
   },
 ];
 
